@@ -40,10 +40,10 @@ function App() {
       <textarea
         value={inputText}
         onChange={handleChange}
-        placeholder="Type something here..."
+        placeholder="Enter text..."
         className="spell-check-textarea"
       />
-      {correctionMessage && <p className="correction-message">{correctionMessage}</p>}
+      {correctionMessage && <p className="correction-message"><b>{correctionMessage}</b></p>}
     </div>
   );
 }
